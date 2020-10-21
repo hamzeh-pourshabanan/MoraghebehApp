@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Moraghebeh App</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">حاسِب</string>
+    <string name="nav_header_subtitle">www.haaseb.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">تنظیمات(در ورژن ۲)</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_login">ورود</string>
+    <string name="invalid_credentials">نام کاربری یا رمز عبور صحیح نمی باشد</string>
+    <string name="failed_response">پاسخی از سرور دریافت نشد. لطفا از اتصال گوشی خود به اینترنت مطمئن شوید و مجددا تلاش کنید.</string>
+    <string name="action_exit">خروج</string>
+    <string name="preference_login_key">com.hamzeh.moraghebehapp.loginid</string>
+    <string name="saved_user_id_key">SAVED_USER_ID</string>
+    <string name="my_arbayiins">اربعینیات جاری</string>
+
+    <!--  PrimeDatePicker-->
+    <string name="prime_date_picker_selected_day">انتخاب تاریخ شروع</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_arb_sabegh">اربعینیات گذشته</string>
+    <string name="menu_sabegheh">اربعینیات سابق</string>
+    <string name="dayPreference_file_key">DAYPREFERENCE</string>
+</resources>
