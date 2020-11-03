@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.hamzeh.moraghebehapp.ui.arbayiin.HomeFragment"
+        android:label="@string/my_arbayiins"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_slideshow"
+            app:destination="@id/nav_slideshow"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_sabegh"
+        android:name="com.hamzeh.moraghebehapp.ui.sabegheh.SabeghehFragment"
+        android:label="@string/menu_sabegheh"
+        tools:layout="@layout/fragment_sabegheh" >
+        <action
+            android:id="@+id/action_nav_gallery_to_daysFragment"
+            app:destination="@id/daysFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.hamzeh.moraghebehapp.ui.amal.SlideshowFragment"
+
+        tools:layout="@layout/fragment_slideshow" >
+        <argument
+            android:name="arbId"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="duration"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="resultsCount"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.hamzeh.moraghebehapp.ui.login.LoginFragment"
+        android:label="@string/menu_login"
+        tools:layout="@layout/fragment_login" />
+
+    <action android:id="@+id/action_global_loginfragment"
+        app:destination="@id/nav_login"/>
+
+    <action
+        android:id="@+id/action_global_sabeghfragment"
+        app:destination="@id/nav_sabegh"
+        app:enterAnim="@anim/slide_in_up"
+        app:exitAnim="@anim/slide_out_down" />
+
+    <action
+        android:id="@+id/action_global_homefragment"
+        app:destination="@id/nav_home"
+        app:enterAnim="@anim/slide_in_up"
+        app:exitAnim="@anim/slide_out_down" />
+
+    <dialog
+        android:id="@+id/my_dialog_fragment"
+        android:name="com.hamzeh.moraghebehapp.ui.sabegheh.SubmitTaskDialogFragment">
+        <argument android:name="myarg" android:defaultValue="@null" />
+    </dialog>
+    <fragment
+        android:id="@+id/daysFragment"
+        android:name="com.hamzeh.moraghebehapp.ui.sabegheh.DaysFragment"
+        android:label="نتایج اربعین"
+        tools:layout="@layout/fragment_days">
+        <argument
+            android:name="arbId"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="duration"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="resultsCount"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_daysFragment_to_pastAmalsFragment"
+            app:destination="@id/pastAmalsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pastAmalsFragment"
+        android:name="com.hamzeh.moraghebehapp.ui.sabegheh.PastAmalsFragment"
+        android:label="نتایج روز"
+        tools:layout="@layout/fragment_past_amals">
+        <argument
+            android:name="arbId"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="duration"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="resultCount"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+</navigation>

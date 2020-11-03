@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/slideView"
+    android:layout_width="match_parent"
+    android:layout_height="442dp"
+    android:background="#E1E1E1"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="1.0"
+    >
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.1"
+        android:background="@drawable/ic_drag_handler"
+        android:contentDescription="drag handler" />
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="0.1"-->
+    <!--            android:text="ورود متن" />-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="top"
+
+        android:layout_marginBottom="54dp"
+        android:layout_weight="0.7"
+        />
+
+    <Button
+        android:id="@+id/button_submit_slide"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_gravity="center"
+        android:layout_marginBottom="45dp"
+        android:text="ثبت" />
+</LinearLayout>
