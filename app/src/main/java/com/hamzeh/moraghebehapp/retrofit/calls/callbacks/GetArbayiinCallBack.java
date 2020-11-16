@@ -22,7 +22,7 @@ public class GetArbayiinCallBack implements Callback<List<ArbayiinEntity>> {
 
     @Override
     public void onResponse( Call<List<ArbayiinEntity>> call, Response<List<ArbayiinEntity>> response) {
-        Log.d("arbayiinssss", "inside onResponse");
+        Log.d("arbayiinSabegh", "inside onResponse");
         if (response.isSuccessful()) {
             arbayiinDao.deleteAll();
             Log.d("arbayiinssss", "isSuccessful");

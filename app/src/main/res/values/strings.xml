@@ -9,7 +9,7 @@
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_slideshow">سابقه ی اربعینیات</string>
     <string name="menu_login">ورود</string>
     <string name="invalid_credentials">نام کاربری یا رمز عبور صحیح نمی باشد</string>
     <string name="failed_response">پاسخی از سرور دریافت نشد. لطفا از اتصال گوشی خود به اینترنت مطمئن شوید و مجددا تلاش کنید.</string>
@@ -25,4 +25,5 @@
     <string name="menu_arb_sabegh">اربعینیات گذشته</string>
     <string name="menu_sabegheh">اربعینیات سابق</string>
     <string name="dayPreference_file_key">DAYPREFERENCE</string>
+    <string name="sabegh_arbayiins">اربعین های گذشته</string>
 </resources>

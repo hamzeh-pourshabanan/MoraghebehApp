@@ -48,7 +48,7 @@ public class WebServiceModule {
 //                .addInterceptor(oauth1Wordpress)
                 .build();
         Retrofit.Builder builder = new Retrofit.Builder()
-                .baseUrl("https://192.168.1.168/")
+                .baseUrl("http://192.168.1.168:3000//")
                 .callbackExecutor(executorService)
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava3CallAdapterFactory.create())

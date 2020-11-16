@@ -12,9 +12,9 @@
             android:id="@+id/nav_sabegh"
             android:icon="@drawable/ic_baseline_history_drawer_24"
             android:title="@string/menu_sabegheh" />
-<!--        <item-->
-<!--            android:id="@+id/nav_slideshow"-->
-<!--            android:icon="@drawable/ic_menu_slideshow"-->
-<!--            android:title="@string/menu_slideshow" />-->
+        <item
+            android:id="@+id/nav_before_app"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow" />
     </group>
 </menu>

@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_sabegh)
+                R.id.nav_home, R.id.nav_sabegh, R.id.nav_before_app)
                 .setOpenableLayout(drawer)
                 .setFallbackOnNavigateUpListener(new AppBarConfiguration.OnNavigateUpListener() {
                     @Override

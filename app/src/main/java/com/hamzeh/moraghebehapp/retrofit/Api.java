@@ -27,6 +27,11 @@ public interface Api {
             @Query("userId") int id
     );
 
+    @GET("/moraghebe/wp-json/moraghebeh/v1/getSabeghArbs")
+    Call<List<ArbayiinEntity>> getSabeghArbayiin(
+            @Query("userId") int id
+    );
+
     @GET("/moraghebe/wp-json/moraghebeh/v1/manageAmal")
     Call<List<AmalApiPojo>> getAmal(
             @Query("userId") int id,
