@@ -124,7 +124,11 @@ public class SlideshowFragment extends Fragment {
         mCurrentDate = startDate.clone();
         mCurrentDate.add(5, resultsCount);
 
-        binding.endValue.setText(arbayiinEndDate(startDate, duration));
+//        binding.endValue.setText(arbayiinEndDate(startDate, duration));
+        // set end_text title to the current day number in Farsi
+        binding.endText.setText(" روز " + FaNum.convert(String.valueOf((resultsCount+1))));
+        // Sets end_value to current date
+        binding.endValue.setText(mCurrentDate.getLongDateString());
 
         amalAdapter.setToday(today);
 
@@ -342,7 +346,7 @@ public class SlideshowFragment extends Fragment {
         slideUp = null;
         today = null;
         binding = null;
-        Log.d("onDestroyView", "binding: " + binding);
+
         floatingActionButton.hide();
 
         navController = null;
@@ -436,10 +440,16 @@ public class SlideshowFragment extends Fragment {
     private void updateUIWhenStopingHTTPRequest(int dayNumber){
         binding.currentDayTv.setText(SlideshowFragmentUpdateUI.getCurrentDayText(dayNumber, duration, mCurrentDate, floatingActionButton));
         if (dayNumber <= duration) {
-            mCurrentDate.add(5, 1);
-            String current = String.valueOf(dayNumber);
+
+            String current = FaNum.convert(String.valueOf(dayNumber));
 //            String current = String.valueOf(dayNumber).concat("(").concat(mCurrentDate.getShortDateString()).concat(")");
-            binding.currentDayTv.setText(FaNum.convert(current));
+            binding.currentDayTv.setText(current);
+
+            // update end_value indicating current day
+
+            binding.endValue.setText(mCurrentDate.getLongDateString());
+            binding.endText.setText(" روز " + current);
+            mCurrentDate.add(5, 1);
         } else {
             floatingActionButton.hide();
             binding.currentDayTv.setText("پایان اربعین");

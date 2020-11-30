@@ -26,4 +26,5 @@
     <string name="menu_sabegheh">اربعینیات سابق</string>
     <string name="dayPreference_file_key">DAYPREFERENCE</string>
     <string name="sabegh_arbayiins">اربعین های گذشته</string>
+    <string name="current_day">روز جاری</string>
 </resources>
